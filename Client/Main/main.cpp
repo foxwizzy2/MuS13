@@ -403,10 +403,6 @@ LRESULT CALLBACK MouseProc(int nCode, WPARAM wParam, LPARAM lParam) // OK
 {
 	if (nCode == HC_ACTION)
 	{
-		MOUSEHOOKSTRUCTEX* HookStruct = (MOUSEHOOKSTRUCTEX*)lParam;
-
-		int direction = HookStruct->mouseData;
-
 		switch (wParam)
 		{
 		case WM_LBUTTONUP:
@@ -418,6 +414,9 @@ LRESULT CALLBACK MouseProc(int nCode, WPARAM wParam, LPARAM lParam) // OK
 
 		case WM_MOUSEWHEEL:
 		{
+			MOUSEHOOKSTRUCTEX* HookStruct = (MOUSEHOOKSTRUCTEX*)lParam;
+			int direction = HookStruct->mouseData;
+
 			//Log.ConsoleOutPut(1, c_Red, t_Default, "HookStruct->mouseData: %d", HookStruct->mouseData);			
 
 			if (GetForegroundWindow() == *(HWND*)(MAIN_WINDOW))
