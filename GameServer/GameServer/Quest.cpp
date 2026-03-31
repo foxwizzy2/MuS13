@@ -362,7 +362,9 @@ void CQuest::GCQuestInfoSend(int aIndex) // OK
 
 	pMsg.header.set(0xA0,sizeof(pMsg));
 
-	pMsg.count = MAX_QUEST_LIST;
+	// QuestInfo stores packed quest states (4 quests / byte), so count must be the packed-byte count.
+	// Sending 200 here can make clients iterate beyond QuestInfo[50].
+	pMsg.count = sizeof(pMsg.QuestInfo);
 	
 	for (int i=0; i<50; i++)
 	{
