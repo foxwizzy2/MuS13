@@ -575,7 +575,7 @@ bool Interface::IsWorkZone(float X, float Y, float MaxX, float MaxY)
 
 void Interface::OpenWindowEx(int WindowID)
 {
-	if (WindowID < 0 || WindowID > MAX_WINDOW_EX)
+	if (WindowID < 0 || WindowID >= MAX_WINDOW_EX)
 	{
 		return;
 	}
@@ -600,7 +600,7 @@ void Interface::OpenWindowEx(int WindowID)
 
 void Interface::CloseWindowEx(int WindowID)
 {
-	if (WindowID < 0 || WindowID > MAX_WINDOW_EX)
+	if (WindowID < 0 || WindowID >= MAX_WINDOW_EX)
 	{
 		return;
 	}
@@ -625,7 +625,7 @@ void Interface::CloseWindowEx(int WindowID)
 
 bool Interface::CheckWindowEx(int WindowID)
 {
-	if (WindowID < 0 || WindowID > MAX_WINDOW_EX)
+	if (WindowID < 0 || WindowID >= MAX_WINDOW_EX)
 	{
 		return 0;
 	}
@@ -644,7 +644,7 @@ void Interface::DrawGUIY(short ObjectID, float PosX, float PosY, int Type)
 
 bool Interface::CursorWindowEx(int WindowID)
 {
-	if (WindowID < 0 || WindowID > MAX_WINDOW_EX)
+	if (WindowID < 0 || WindowID >= MAX_WINDOW_EX)
 	{
 		return false;
 	}
