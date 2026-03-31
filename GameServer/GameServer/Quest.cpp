@@ -113,7 +113,7 @@ QUEST_INFO* CQuest::GetInfoByIndex(LPOBJ lpObj,int QuestIndex) // OK
 
 bool CQuest::AddQuestList(LPOBJ lpObj,int QuestIndex,int QuestState) // OK
 {
-	if(QuestIndex < 0 || QuestIndex >= m_QuestInfo.size())
+	if(QuestIndex < 0 || QuestIndex >= MAX_QUEST_LIST || QuestIndex >= m_QuestInfo.size())
 	{
 		return 0;
 	}
@@ -125,12 +125,17 @@ bool CQuest::AddQuestList(LPOBJ lpObj,int QuestIndex,int QuestState) // OK
 
 BYTE CQuest::GetQuestList(LPOBJ lpObj,int QuestIndex) // OK
 {
-	if(QuestIndex < 0 || QuestIndex >= m_QuestInfo.size())
+	if(QuestIndex < 0 || QuestIndex >= MAX_QUEST_LIST || QuestIndex >= m_QuestInfo.size())
 	{
 		return 0;
 	}
 
 	const int startQuestByte = QuestIndex/4*4;
+	if ((startQuestByte + 3) >= MAX_QUEST_LIST)
+	{
+		return 0;
+	}
+
 	return lpObj->Quest[startQuestByte].questState | lpObj->Quest[startQuestByte + 1].questState << 2
 		| lpObj->Quest[startQuestByte + 2].questState << 4 | lpObj->Quest[startQuestByte + 3].questState << 6;
 }
@@ -167,7 +172,7 @@ bool CQuest::CheckQuestRequisite(LPOBJ lpObj,QUEST_INFO* lpInfo) // OK
 
 bool CQuest::CheckQuestListState(LPOBJ lpObj,int QuestIndex,int QuestState) // OK
 {
-	if(QuestIndex < 0 || QuestIndex >= m_QuestInfo.size())
+	if(QuestIndex < 0 || QuestIndex >= MAX_QUEST_LIST || QuestIndex >= m_QuestInfo.size())
 	{
 		return 0;
 	}
