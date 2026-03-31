@@ -1,0 +1,27 @@
+﻿  stdafx.cpp
+  CCRC32.Cpp
+  CastleSiege.cpp
+  Console.cpp
+  CustomFunctions.cpp
+  EmojiSystem.cpp
+  HackCheck.cpp
+  Interface.cpp
+  EventSchedule.cpp
+  main.cpp
+  Oficina.cpp
+  PacketManager.cpp
+  PrintPlayer.cpp
+  Protect.cpp
+  Protocol.cpp
+  Reconnect.cpp
+  ScreenShooter.cpp
+  ScreenShot.cpp
+  sha1.cpp
+  TrayMode.cpp
+  Uploader.cpp
+  Compiling...
+  Util.cpp
+     Creating library F:\Work\MuServersSource\s13\source-files\Release\Main\main.lib and object F:\Work\MuServersSource\s13\source-files\Release\Main\main.exp
+  Generating code
+  Finished generating code
+  Main.vcxproj -> F:\Work\MuServersSource\s13\source-files\Release\Main\main.dll

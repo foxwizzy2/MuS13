@@ -1,0 +1,25 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  stdafx.cpp
+  CCRC32.Cpp
+  CastleSiege.cpp
+  Console.cpp
+  CustomFunctions.cpp
+  HackCheck.cpp
+  Interface.cpp
+  EventSchedule.cpp
+  main.cpp
+  Oficina.cpp
+  PacketManager.cpp
+  PrintPlayer.cpp
+  Protect.cpp
+  Protocol.cpp
+  Reconnect.cpp
+  ScreenShooter.cpp
+  ScreenShot.cpp
+  sha1.cpp
+  TrayMode.cpp
+  Uploader.cpp
+  Util.cpp
+  Generating code
+  Finished generating code
+  Main.vcxproj -> F:\Work\MuServersSource\s13\source-files\Client\Main\..\..\..\..\..\..\..\..\IconeMU\main.dll

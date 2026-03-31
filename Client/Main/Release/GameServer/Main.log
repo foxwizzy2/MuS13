@@ -1,0 +1,24 @@
+﻿  stdafx.cpp
+  CCRC32.Cpp
+  CastleSiege.cpp
+  Console.cpp
+  CustomFunctions.cpp
+  HackCheck.cpp
+  Interface.cpp
+  EventSchedule.cpp
+  main.cpp
+  Oficina.cpp
+  PacketManager.cpp
+  PrintPlayer.cpp
+  Protect.cpp
+  Protocol.cpp
+  Reconnect.cpp
+  ScreenShooter.cpp
+  ScreenShot.cpp
+  sha1.cpp
+  TrayMode.cpp
+  Uploader.cpp
+  Util.cpp
+  Generating code
+  Finished generating code
+  Main.vcxproj -> F:\Work\MuServersSource\s13\source-files\Release\main.dll

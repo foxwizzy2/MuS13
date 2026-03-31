@@ -1,0 +1,488 @@
+﻿  stdafx.cpp
+  Wings4thOption.cpp
+  Warehouse.cpp
+  Viewport.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Addons.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Util.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  User.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\minimap.h(58): warning C4091: 'typedef ' : ignored on left of '_PMSG_ANS_ITL_NPC_POSITION' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\user.cpp(1449): warning C4018: '<' : signed/unsigned mismatch
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\user.cpp(1460): warning C4018: '<' : signed/unsigned mismatch
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\user.cpp(3267): warning C4018: '<' : signed/unsigned mismatch
+  UnityBattleField.cpp
+  UnionInfo.cpp
+  Union.cpp
+  Trade.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  SXIDecryp.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  SummonScroll.cpp
+  StatSpecialize.cpp
+  SpeedFila.cpp
+  SocketManagerUdp.cpp
+  SocketManager.cpp
+  SocketItemType.cpp
+  SocketItemOption.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\socketitemoption.cpp(586): warning C4101: 'socketOption' : unreferenced local variable
+  SocketChaos.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  SkillManager.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\skillmanager.cpp(5831): warning C4101: 'ArrowFrustrum' : unreferenced local variable
+  Generating Code...
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\socketitemoption.cpp(1052): warning C4715: 'CSocketItemOption::Get10BitSocketOptionIndex' : not all control paths return a value
+  Compiling...
+  SkillHitBox.cpp
+  Skill.cpp
+  Silvester.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  ShopManager.cpp
+  Shop.cpp
+  SetItemType.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  SetItemOption.cpp
+  ServerInfo.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\minimap.h(58): warning C4091: 'typedef ' : ignored on left of '_PMSG_ANS_ITL_NPC_POSITION' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\serverinfo.cpp(420): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\serverinfo.cpp(432): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\serverinfo.cpp(444): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+  ServerDisplayer.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\serverdisplayer.cpp(293): warning C4101: 'buff' : unreferenced local variable
+  SerialCheck.cpp
+  ScheduleManager.cpp
+  RuudTokenRewardProbability.cpp
+  RheaGold.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  RestoreSoldItem.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\restoresolditem.cpp(1098): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+  ResetTable.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Reconnect.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  RandomManager.cpp
+  RaklionUtil.cpp
+  RaklionSelupan.cpp
+  RaklionObjInfo.cpp
+  Generating Code...
+  Compiling...
+  RaklionBattleUserMng.cpp
+  RaklionBattleUser.cpp
+  RaklionBattleOfSelupan.cpp
+  Raklion.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  QueueTimer.cpp
+  Queue.cpp
+  QuestWorldReward.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  QuestWorldObjective.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  QuestWorld.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  QuestReward.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  QuestObjective.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Quest.cpp
+  Protocol.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\minimap.h(58): warning C4091: 'typedef ' : ignored on left of '_PMSG_ANS_ITL_NPC_POSITION' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\protocol.cpp(1422): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\protocol.cpp(1462): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(188) : see declaration of 'strncpy'
+  Protect.cpp
+  PersonalShop.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  PentagramSystem.cpp
+  PcPoint.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Path.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\path.cpp(46): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+  PartyMatching.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Party.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Generating Code...
+  Compiling...
+  PacketManager.cpp
+  Oficina.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\oficina.cpp(299): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\oficina.cpp(300): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\oficina.cpp(542): warning C4018: '>=' : signed/unsigned mismatch
+  ObjectManager.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\objectmanager.cpp(3401): warning C4804: '>' : unsafe use of type 'bool' in operation
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\objectmanager.cpp(5297): warning C4800: 'BYTE' : forcing value to bool 'true' or 'false' (performance warning)
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\objectmanager.cpp(5298): warning C4800: 'BYTE' : forcing value to bool 'true' or 'false' (performance warning)
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\objectmanager.cpp(5950): warning C4018: '>=' : signed/unsigned mismatch
+  NpcTalk.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Notice.cpp
+  NewsSystem.cpp
+  NewQuestWorld.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\newquestworld.cpp(348): warning C4101: 'lpInfo' : unreferenced local variable
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\newquestworld.cpp(369): warning C4101: 'lpInfo' : unreferenced local variable
+  MysteriousStone.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  MuunSystem.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  MuRummy.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\murummy.cpp(1192): warning C4101: 'lpObj' : unreferenced local variable
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\murummy.cpp(1190): warning C4101: 'nScore' : unreferenced local variable
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\murummy.cpp(1191): warning C4101: 'pCMuRummyInfo' : unreferenced local variable
+  MUFC.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\mufc.cpp(195): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+  MoveSummon.cpp
+  Move.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  MossMerchant.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  MonsterStats.cpp
+  MonsterSpawner.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\monsterspawner.cpp(107): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\monsterspawner.cpp(115): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\monsterspawner.cpp(116): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\monsterspawner.cpp(117): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\monsterspawner.cpp(118): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\monsterspawner.cpp(152): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\monsterspawner.cpp(153): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\monsterspawner.cpp(591): warning C4101: 'Code' : unreferenced local variable
+  MonsterSkillUnitInfo.cpp
+  MonsterSkillUnit.cpp
+  MonsterSkillManager.cpp
+  MonsterSkillInfo.cpp
+  Generating Code...
+  Compiling...
+  MonsterSkillElementOption.cpp
+  MonsterSkillElementInfo.cpp
+  MonsterSkillElement.cpp
+  MonsterSetBase.cpp
+  MonsterManager.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  MonsterAIUtil.cpp
+  MonsterAIUnitInfo.cpp
+  MonsterAIUnit.cpp
+  MonsterAIState.cpp
+  MonsterAIRuleInfo.cpp
+  MonsterAIRule.cpp
+  MonsterAIMovePathInfo.cpp
+  MonsterAIMovePath.cpp
+  MonsterAIGroupMember.cpp
+  MonsterAIGroup.cpp
+  MonsterAIElementInfo.cpp
+  MonsterAIElement.cpp
+  MonsterAIAutomataInfo.cpp
+  MonsterAIAutomata.cpp
+  MonsterAIAgro.cpp
+  Generating Code...
+  Compiling...
+  MonsterAI.cpp
+  Monster.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  mmItemSlot.cpp
+  MiningSystem.cpp
+  MiniMap.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\minimap.h(58): warning C4091: 'typedef ' : ignored on left of '_PMSG_ANS_ITL_NPC_POSITION' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  MiniDump.cpp
+  Message.cpp
+  Mercenary.cpp
+  MemScript.cpp
+  MemoryAllocatorInfo.cpp
+  MemoryAllocator.cpp
+  MasteryItemExtOptionSet.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  MasterSkillTree_4th.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  MasterSkillTree.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  MapServerManager.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  MapPath.cpp
+  MapManager.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  MapItem.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Map.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  LuckyItem.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Generating Code...
+  Compiling...
+  LuckyCoin.cpp
+  Logger.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\logger.cpp(282): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+  Log.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  LifeStone.cpp
+  LicenceCheck.cpp
+  KanturuUtil.cpp
+  KanturuTowerOfRefinement.cpp
+  KanturuStateInfo.cpp
+  KanturuObjInfo.cpp
+  KanturuMonsterMng.cpp
+  KanturuMaya.cpp
+  KanturuEntranceNPC.cpp
+  KanturuBattleUserMng.cpp
+  KanturuBattleStanby.cpp
+  KanturuBattleOfNightmare.cpp
+  KanturuBattleOfMaya.cpp
+  Kanturu.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Kalima.cpp
+  JSProtocol.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  JewelOfHarmonyType.cpp
+  Generating Code...
+  Compiling...
+  JewelOfHarmonyOption.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  JewelMix.cpp
+  ItemValue.cpp
+  ItemStack.cpp
+  ItemOptionRate.cpp
+  ItemOption.cpp
+  ItemMove.cpp
+  ItemManager.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\itemmanager.cpp(5027): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\itemmanager.cpp(5031): warning C4172: returning address of local variable or temporary
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\itemmanager.cpp(5040): warning C4172: returning address of local variable or temporary
+  ItemDrop.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  ItemBagManager.cpp
+  ItemBagEx.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\itembagex.cpp(393): warning C4018: '<' : signed/unsigned mismatch
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\itembagex.cpp(573): warning C4018: '<' : signed/unsigned mismatch
+  ItemBag.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Item.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  IpManager.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  InventoryEquipment.cpp
+  InvasionManager.cpp
+  ImperialGuardian.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  IllusionTemple.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  HuntingGrounds.cpp
+  Helper.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Generating Code...
+  Compiling...
+  HackPacketCheck.cpp
+  HackCheck.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  GuildMatching.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  GuildClass.cpp
+  Guild.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  GuardianStatue.cpp
+  GremoryCase.cpp
+  GodOfDarkness.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  GMSystem.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\gmsystem.cpp(53): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\gmsystem.cpp(78): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
+  GensSystem.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Gate.cpp
+  GameServer.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  GameMaster.cpp
+  GameMain.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Fruit.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  ForThTree.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Filter.cpp
+  FilaHit.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\filahit.cpp(627): warning C4018: '>' : signed/unsigned mismatch
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\filahit.cpp(644): warning C4018: '>' : signed/unsigned mismatch
+  ExperienceTable.cpp
+  EventInventory.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Generating Code...
+  Compiling...
+  ESProtocol.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  EffectManager.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  Effect.cpp
+  Duel.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  DSProtocol.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\dsprotocol.cpp(4348): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\dsprotocol.cpp(4351): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\dsprotocol.cpp(4370): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\dsprotocol.cpp(4373): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\dsprotocol.cpp(4389): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\dsprotocol.cpp(4392): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+  DropSystem.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\dropsystem.cpp(74): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\dropsystem.cpp(95): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
+  DoubleGoer.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  DevilSquare.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  DefaultClassInfo.cpp
+  DarkSpirit.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  CustomWing.cpp
+  CustomStore.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  CustomPVPtime.cpp
+  CustomMonster.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\custommonster.cpp(297): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\custommonster.cpp(345): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+  CustomJewel.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\customjewel.cpp(861): warning C4018: '<' : signed/unsigned mismatch
+  CustomEventDrop.cpp
+  CustomAttack.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\customattack.cpp(754): warning C4018: '>' : signed/unsigned mismatch
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\customattack.cpp(769): warning C4018: '>' : signed/unsigned mismatch
+  CustomArena.cpp
+  CSProtocol.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  CrywolfUtil.cpp
+  Generating Code...
+  Compiling...
+  CrywolfSync.cpp
+  CrywolfStatue.cpp
+  CrywolfStateTimeInfo.cpp
+  CrywolfObjInfo.cpp
+  CrywolfAltar.cpp
+  Crywolf.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\crywolf.cpp(1326): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\time.inl(112) : see declaration of 'localtime'
+  CriticalSection.cpp
+  Connection.cpp
+  Configs.cpp
+  CommandManager.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\commandmanager.cpp(3034): warning C4018: '<' : signed/unsigned mismatch
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\commandmanager.cpp(3221): warning C4018: '<' : signed/unsigned mismatch
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\commandmanager.cpp(3392): warning C4018: '<' : signed/unsigned mismatch
+  ComboSkillPath.cpp
+  ComboSkill.cpp
+  CNixiesLakeBossZone.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\cnixieslakebosszone.cpp(208): warning C4101: 'result' : unreferenced local variable
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\cnixieslakebosszone.cpp(692): warning C4018: '<' : signed/unsigned mismatch
+  CNixiesLakeBoss.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\cnixieslakeboss.cpp(210): warning C4805: '==' : unsafe mix of type 'BYTE' and type 'bool' in operation
+  CheatGuard.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\cheatguard.cpp(26): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\cheatguard.cpp(30): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+  ChatSystem.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\chatsystem.cpp(557): warning C4018: '>' : signed/unsigned mismatch
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\chatsystem.cpp(1142): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\chatsystem.cpp(1718): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\chatsystem.cpp(1730): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\chatsystem.cpp(1743): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
+  ChaosCastle.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  ChaosBox.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  CBombHuntMng.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  CBombHuntInfo.cpp
+  Generating Code...
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\cnixieslakeboss.cpp(477): warning C4700: uninitialized local variable 'nTarUserIndex' used
+  Compiling...
+  CBlockChatUserSystem.cpp
+  CastleSiegeWeapon.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  CastleSiegeSync.cpp
+  CastleSiegeCrownSwitch.cpp
+  CastleSiegeCrown.cpp
+  CastleSiege.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  CastleDeep.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  CashShop.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  CannonTower.cpp
+  CalFormula.cpp
+  CAcheronGuardianEvent.cpp
+  BonusManager.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  BloodCastle.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+  BattleSoccerManager.cpp
+  BattleSoccer.cpp
+  BattleGround.cpp
+  Attack.cpp
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\party.h(104): warning C4091: 'typedef ' : ignored on left of 'PMSG_CHANGE_PARTY_LEADER' when no variable is declared
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\attack.cpp(1583): warning C4018: '>=' : signed/unsigned mismatch
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\attack.cpp(3256): warning C4065: switch statement contains 'default' but no 'case' labels
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\attack.cpp(4102): warning C4101: 'i' : unreferenced local variable
+f:\work\muserverssource\s13\source-files\gameserver\gameserver\attack.cpp(4289): warning C4101: 'i' : unreferenced local variable
+  ArcaBattle.cpp
+  380ItemType.cpp
+  380ItemOption.cpp
+  Generating Code...
+  Compiling...
+  Math.cpp
+  CCRC32.Cpp
+  pugixml.cpp
+  Generating Code...
+     Creating library ..\..\..\MuServer\GameServer\GameServer.lib and object ..\..\..\MuServer\GameServer\GameServer.exp
+  GameServer.vcxproj -> F:\Work\MuServersSource\s13\source-files\GameServer\GameServer\..\..\..\MuServer\GameServer\GameServer.exe
