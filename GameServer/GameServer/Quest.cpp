@@ -127,6 +127,8 @@ BYTE CQuest::GetQuestList(LPOBJ lpObj,int QuestIndex) // OK
 {
 	if(QuestIndex < 0 || QuestIndex >= MAX_QUEST_LIST || QuestIndex >= m_QuestInfo.size())
 	{
+		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][GetQuestList] invalid QuestIndex=%d max_list=%d loaded_quests=%d name=%s",
+			QuestIndex, MAX_QUEST_LIST, (int)m_QuestInfo.size(), lpObj->Name);
 		return 0;
 	}
 
@@ -235,8 +237,12 @@ void CQuest::CGQuestInfoRecv(int aIndex) // OK
 
 	if(gObjIsConnectedGP(aIndex) == 0)
 	{
+		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][CGQuestInfoRecv] disconnected aIndex=%d", aIndex);
 		return;
 	}
+
+	LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][CGQuestInfoRecv] aIndex=%d name=%s SendQuestInfo=%d LoadQuestKillCount=%d QuestKillCountIndex=%d",
+		aIndex, lpObj->Name, lpObj->SendQuestInfo, lpObj->LoadQuestKillCount, lpObj->QuestKillCountIndex);
 
 	this->GCQuestInfoSend(aIndex);
 }
@@ -247,13 +253,19 @@ void CQuest::CGQuestStateRecv(PMSG_QUEST_STATE_RECV* lpMsg,int aIndex) // OK
 
 	if(gObjIsConnectedGP(aIndex) == 0)
 	{
+		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][CGQuestStateRecv] disconnected aIndex=%d", aIndex);
 		return;
 	}
+
+	LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][CGQuestStateRecv] aIndex=%d name=%s QuestIndex=%d QuestState=%d",
+		aIndex, lpObj->Name, lpMsg->QuestIndex, lpMsg->QuestState);
 
 	QUEST_INFO* lpInfo = this->GetInfoByIndex(lpObj,lpMsg->QuestIndex);
 
 	if(lpInfo == 0)
 	{
+		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][CGQuestStateRecv] GetInfoByIndex returned null for QuestIndex=%d (aIndex=%d name=%s)",
+			lpMsg->QuestIndex, aIndex, lpObj->Name);
 		return;
 	}
 
@@ -360,6 +372,8 @@ void CQuest::GCQuestInfoSend(int aIndex) // OK
 
 	if(lpObj->SendQuestInfo != 0)
 	{
+		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][GCQuestInfoSend] skipped (already sent) aIndex=%d name=%s",
+			aIndex, lpObj->Name);
 		return;
 	}
 
@@ -378,6 +392,9 @@ void CQuest::GCQuestInfoSend(int aIndex) // OK
 					  | lpObj->Quest[questNumber + 2].questState << 4 | lpObj->Quest[questNumber + 3].questState << 6;
 	}
 
+	LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][GCQuestInfoSend] aIndex=%d name=%s packet_size=%d count=%d first_bytes=%u,%u,%u,%u",
+		aIndex, lpObj->Name, pMsg.header.size, pMsg.count, pMsg.QuestInfo[0], pMsg.QuestInfo[1], pMsg.QuestInfo[2], pMsg.QuestInfo[3]);
+
 	DataSend(aIndex,(BYTE*)&pMsg,pMsg.header.size);
 
 	lpObj->SendQuestInfo = 1;
@@ -394,6 +411,9 @@ void CQuest::GCQuestStateSend(int aIndex,int QuestIndex) // OK
 	pMsg.QuestIndex = QuestIndex;
 
 	pMsg.QuestState = this->GetQuestList(&gObj[aIndex],QuestIndex);
+
+	LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][GCQuestStateSend] aIndex=%d name=%s QuestIndex=%d QuestStatePacked=%d",
+		aIndex, gObj[aIndex].Name, pMsg.QuestIndex, pMsg.QuestState);
 
 	DataSend(aIndex,(BYTE*)&pMsg,pMsg.header.size);
 }
