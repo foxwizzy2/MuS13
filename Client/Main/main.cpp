@@ -403,16 +403,21 @@ LRESULT CALLBACK MouseProc(int nCode, WPARAM wParam, LPARAM lParam) // OK
 {
 	if (nCode == HC_ACTION)
 	{
-		__try
+		switch (wParam)
 		{
-			switch (wParam)
-			{
-			case WM_LBUTTONUP:
-			case WM_LBUTTONDOWN:
-			{
-				gEventSchedule.EventWindowMain(wParam);
-				gOficina.EventWindowMain(wParam);
-			} break;
+		case WM_LBUTTONUP:
+		case WM_LBUTTONDOWN:
+		{
+			gEventSchedule.EventWindowMain(wParam);
+			gOficina.EventWindowMain(wParam);
+		} break;
+
+		case WM_MOUSEWHEEL:
+		{
+			MOUSEHOOKSTRUCTEX* HookStruct = (MOUSEHOOKSTRUCTEX*)lParam;
+			int direction = HookStruct->mouseData;
+
+			//Log.ConsoleOutPut(1, c_Red, t_Default, "HookStruct->mouseData: %d", HookStruct->mouseData);			
 
 			case WM_MOUSEWHEEL:
 			{
