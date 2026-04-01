@@ -135,8 +135,6 @@ BYTE CQuest::GetQuestList(LPOBJ lpObj,int QuestIndex) // OK
 	const int startQuestByte = QuestIndex/4*4;
 	if ((startQuestByte + 3) >= MAX_QUEST_LIST)
 	{
-		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][GetQuestList] invalid packed range start=%d name=%s",
-			startQuestByte, lpObj->Name);
 		return 0;
 	}
 
