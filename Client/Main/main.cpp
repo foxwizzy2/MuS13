@@ -403,54 +403,74 @@ LRESULT CALLBACK MouseProc(int nCode, WPARAM wParam, LPARAM lParam) // OK
 {
 	if (nCode == HC_ACTION)
 	{
-		MOUSEHOOKSTRUCTEX* HookStruct = (MOUSEHOOKSTRUCTEX*)lParam;
-
-		int direction = HookStruct->mouseData;
-
-		switch (wParam)
+		__try
 		{
-		case WM_LBUTTONUP:
-		case WM_LBUTTONDOWN:
-		{
-			gEventSchedule.EventWindowMain(wParam);
-			gOficina.EventWindowMain(wParam);
-		} break;
-
-		case WM_MOUSEWHEEL:
-		{
-			//Log.ConsoleOutPut(1, c_Red, t_Default, "HookStruct->mouseData: %d", HookStruct->mouseData);			
-
-			if (GetForegroundWindow() == *(HWND*)(MAIN_WINDOW))
+			switch (wParam)
 			{
-				SHORT tabKeyState = GetAsyncKeyState(VK_LSHIFT);
+			case WM_LBUTTONUP:
+			case WM_LBUTTONDOWN:
+			{
+				gEventSchedule.EventWindowMain(wParam);
+				gOficina.EventWindowMain(wParam);
+			} break;
 
-				if ((1 << 16) & tabKeyState)
+			case WM_MOUSEWHEEL:
+			{
+				MOUSEHOOKSTRUCTEX* HookStruct = (MOUSEHOOKSTRUCTEX*)lParam;
+				int direction = HookStruct->mouseData;
+
+				//Log.ConsoleOutPut(1, c_Red, t_Default, "HookStruct->mouseData: %d", HookStruct->mouseData);			
+
+				if (GetForegroundWindow() == *(HWND*)(MAIN_WINDOW))
 				{
-					if (direction > 0)
+					SHORT tabKeyState = GetAsyncKeyState(VK_LSHIFT);
+
+					if ((1 << 16) & tabKeyState)
 					{
-						if (*Camera_Zoom > 14)
+						if (direction > 0)
 						{
-							*Camera_Zoom -= 2.0f;
-							//Log.ConsoleOutPut(1, c_Red, t_Default, "IN");
+							if (*Camera_Zoom > 14)
+							{
+								*Camera_Zoom -= 2.0f;
+								//Log.ConsoleOutPut(1, c_Red, t_Default, "IN");
+							}
 						}
-					}
-					else
-					{
-						if (*Camera_Zoom < 70)
+						else
 						{
-							*Camera_Zoom += 2.0f;
-							//Log.ConsoleOutPut(1, c_Red, t_Default, "OUT %f", *Camera_Zoom);
+							if (*Camera_Zoom < 70)
+							{
+								*Camera_Zoom += 2.0f;
+								//Log.ConsoleOutPut(1, c_Red, t_Default, "OUT %f", *Camera_Zoom);
+							}
 						}
 					}
 				}
+			} break;
+			default:
+				break;
 			}
-		} break;
-		default:
-			break;
+		}
+		__except (EXCEPTION_EXECUTE_HANDLER)
+		{
+			Log.ConsoleOutPut(1, c_Red, t_Default, "[MouseProc] exception at wParam=%u", (unsigned int)wParam);
+
+			if (wParam == WM_LBUTTONDOWN && GetForegroundWindow() == *(HWND*)(MAIN_WINDOW))
+			{
+				keybd_event('J', 0, 0, 0);
+				keybd_event('J', 0, KEYEVENTF_KEYUP, 0);
+			}
 		}
 	}
 
-	return CallNextHookEx(HookMS, nCode, wParam, lParam);
+	__try
+	{
+		return CallNextHookEx(HookMS, nCode, wParam, lParam);
+	}
+	__except (EXCEPTION_EXECUTE_HANDLER)
+	{
+		Log.ConsoleOutPut(1, c_Red, t_Default, "[MouseProc] exception in CallNextHookEx wParam=%u", (unsigned int)wParam);
+		return 1;
+	}
 }
 
 LONG WINAPI CheckMacroThread() // OK
