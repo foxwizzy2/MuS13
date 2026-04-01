@@ -11,6 +11,12 @@
 #include "Util.h"
 #include "ForThTree.h"
 CQuest gQuest;
+
+static BYTE GetClientQuestState(BYTE questState)
+{
+	// Old client quest UI is unstable with state 3 (QUEST_CANCEL); expose only 0..2.
+	return (questState > QUEST_FINISH) ? QUEST_NORMAL : questState;
+}
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
@@ -113,7 +119,7 @@ QUEST_INFO* CQuest::GetInfoByIndex(LPOBJ lpObj,int QuestIndex) // OK
 
 bool CQuest::AddQuestList(LPOBJ lpObj,int QuestIndex,int QuestState) // OK
 {
-	if(QuestIndex < 0 || QuestIndex >= m_QuestInfo.size())
+	if(QuestIndex < 0 || QuestIndex >= MAX_QUEST_LIST || QuestIndex >= m_QuestInfo.size())
 	{
 		return 0;
 	}
@@ -125,14 +131,27 @@ bool CQuest::AddQuestList(LPOBJ lpObj,int QuestIndex,int QuestState) // OK
 
 BYTE CQuest::GetQuestList(LPOBJ lpObj,int QuestIndex) // OK
 {
-	if(QuestIndex < 0 || QuestIndex >= m_QuestInfo.size())
+	if(QuestIndex < 0 || QuestIndex >= MAX_QUEST_LIST || QuestIndex >= m_QuestInfo.size())
 	{
+		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][GetQuestList] invalid QuestIndex=%d max_list=%d loaded_quests=%d name=%s",
+			QuestIndex, MAX_QUEST_LIST, (int)m_QuestInfo.size(), lpObj->Name);
 		return 0;
 	}
 
 	const int startQuestByte = QuestIndex/4*4;
-	return lpObj->Quest[startQuestByte].questState | lpObj->Quest[startQuestByte + 1].questState << 2
-		| lpObj->Quest[startQuestByte + 2].questState << 4 | lpObj->Quest[startQuestByte + 3].questState << 6;
+	if ((startQuestByte + 3) >= MAX_QUEST_LIST)
+	{
+		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][GetQuestList] invalid packed range start=%d name=%s",
+			startQuestByte, lpObj->Name);
+		return 0;
+	}
+
+	const BYTE q0 = GetClientQuestState(lpObj->Quest[startQuestByte].questState);
+	const BYTE q1 = GetClientQuestState(lpObj->Quest[startQuestByte + 1].questState);
+	const BYTE q2 = GetClientQuestState(lpObj->Quest[startQuestByte + 2].questState);
+	const BYTE q3 = GetClientQuestState(lpObj->Quest[startQuestByte + 3].questState);
+
+	return q0 | (q1 << 2) | (q2 << 4) | (q3 << 6);
 }
 
 bool CQuest::CheckQuestRequisite(LPOBJ lpObj,QUEST_INFO* lpInfo) // OK
@@ -167,7 +186,7 @@ bool CQuest::CheckQuestRequisite(LPOBJ lpObj,QUEST_INFO* lpInfo) // OK
 
 bool CQuest::CheckQuestListState(LPOBJ lpObj,int QuestIndex,int QuestState) // OK
 {
-	if(QuestIndex < 0 || QuestIndex >= m_QuestInfo.size())
+	if(QuestIndex < 0 || QuestIndex >= MAX_QUEST_LIST || QuestIndex >= m_QuestInfo.size())
 	{
 		return 0;
 	}
@@ -230,8 +249,12 @@ void CQuest::CGQuestInfoRecv(int aIndex) // OK
 
 	if(gObjIsConnectedGP(aIndex) == 0)
 	{
+		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][CGQuestInfoRecv] disconnected aIndex=%d", aIndex);
 		return;
 	}
+
+	LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][CGQuestInfoRecv] aIndex=%d name=%s SendQuestInfo=%d LoadQuestKillCount=%d QuestKillCountIndex=%d",
+		aIndex, lpObj->Name, lpObj->SendQuestInfo, lpObj->LoadQuestKillCount, lpObj->QuestKillCountIndex);
 
 	this->GCQuestInfoSend(aIndex);
 }
@@ -242,13 +265,19 @@ void CQuest::CGQuestStateRecv(PMSG_QUEST_STATE_RECV* lpMsg,int aIndex) // OK
 
 	if(gObjIsConnectedGP(aIndex) == 0)
 	{
+		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][CGQuestStateRecv] disconnected aIndex=%d", aIndex);
 		return;
 	}
+
+	LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][CGQuestStateRecv] aIndex=%d name=%s QuestIndex=%d QuestState=%d",
+		aIndex, lpObj->Name, lpMsg->QuestIndex, lpMsg->QuestState);
 
 	QUEST_INFO* lpInfo = this->GetInfoByIndex(lpObj,lpMsg->QuestIndex);
 
 	if(lpInfo == 0)
 	{
+		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][CGQuestStateRecv] GetInfoByIndex returned null for QuestIndex=%d (aIndex=%d name=%s)",
+			lpMsg->QuestIndex, aIndex, lpObj->Name);
 		return;
 	}
 
@@ -355,6 +384,8 @@ void CQuest::GCQuestInfoSend(int aIndex) // OK
 
 	if(lpObj->SendQuestInfo != 0)
 	{
+		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][GCQuestInfoSend] skipped (already sent) aIndex=%d name=%s",
+			aIndex, lpObj->Name);
 		return;
 	}
 
@@ -362,14 +393,22 @@ void CQuest::GCQuestInfoSend(int aIndex) // OK
 
 	pMsg.header.set(0xA0,sizeof(pMsg));
 
-	pMsg.count = MAX_QUEST_LIST;
+	// QuestInfo stores packed quest states (4 quests / byte), so count must be the packed-byte count.
+	// Sending 200 here can make clients iterate beyond QuestInfo[50].
+	pMsg.count = sizeof(pMsg.QuestInfo);
 	
 	for (int i=0; i<50; i++)
 	{
 		const auto questNumber = i*4;
-		pMsg.QuestInfo[i] = lpObj->Quest[questNumber].questState | lpObj->Quest[questNumber + 1].questState << 2
-					  | lpObj->Quest[questNumber + 2].questState << 4 | lpObj->Quest[questNumber + 3].questState << 6;
+		const BYTE q0 = GetClientQuestState(lpObj->Quest[questNumber].questState);
+		const BYTE q1 = GetClientQuestState(lpObj->Quest[questNumber + 1].questState);
+		const BYTE q2 = GetClientQuestState(lpObj->Quest[questNumber + 2].questState);
+		const BYTE q3 = GetClientQuestState(lpObj->Quest[questNumber + 3].questState);
+		pMsg.QuestInfo[i] = q0 | (q1 << 2) | (q2 << 4) | (q3 << 6);
 	}
+
+	LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][GCQuestInfoSend] aIndex=%d name=%s packet_size=%d count=%d first_bytes=%u,%u,%u,%u",
+		aIndex, lpObj->Name, pMsg.header.size, pMsg.count, pMsg.QuestInfo[0], pMsg.QuestInfo[1], pMsg.QuestInfo[2], pMsg.QuestInfo[3]);
 
 	DataSend(aIndex,(BYTE*)&pMsg,pMsg.header.size);
 
@@ -387,6 +426,9 @@ void CQuest::GCQuestStateSend(int aIndex,int QuestIndex) // OK
 	pMsg.QuestIndex = QuestIndex;
 
 	pMsg.QuestState = this->GetQuestList(&gObj[aIndex],QuestIndex);
+
+	LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][GCQuestStateSend] aIndex=%d name=%s QuestIndex=%d QuestStatePacked=%d",
+		aIndex, gObj[aIndex].Name, pMsg.QuestIndex, pMsg.QuestState);
 
 	DataSend(aIndex,(BYTE*)&pMsg,pMsg.header.size);
 }
