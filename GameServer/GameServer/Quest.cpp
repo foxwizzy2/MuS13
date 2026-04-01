@@ -11,6 +11,12 @@
 #include "Util.h"
 #include "ForThTree.h"
 CQuest gQuest;
+
+static BYTE GetClientQuestState(BYTE questState)
+{
+	// Old client quest UI is unstable with state 3 (QUEST_CANCEL); expose only 0..2.
+	return (questState > QUEST_FINISH) ? QUEST_NORMAL : questState;
+}
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
@@ -135,11 +141,17 @@ BYTE CQuest::GetQuestList(LPOBJ lpObj,int QuestIndex) // OK
 	const int startQuestByte = QuestIndex/4*4;
 	if ((startQuestByte + 3) >= MAX_QUEST_LIST)
 	{
+		LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][GetQuestList] invalid packed range start=%d name=%s",
+			startQuestByte, lpObj->Name);
 		return 0;
 	}
 
-	return lpObj->Quest[startQuestByte].questState | lpObj->Quest[startQuestByte + 1].questState << 2
-		| lpObj->Quest[startQuestByte + 2].questState << 4 | lpObj->Quest[startQuestByte + 3].questState << 6;
+	const BYTE q0 = GetClientQuestState(lpObj->Quest[startQuestByte].questState);
+	const BYTE q1 = GetClientQuestState(lpObj->Quest[startQuestByte + 1].questState);
+	const BYTE q2 = GetClientQuestState(lpObj->Quest[startQuestByte + 2].questState);
+	const BYTE q3 = GetClientQuestState(lpObj->Quest[startQuestByte + 3].questState);
+
+	return q0 | (q1 << 2) | (q2 << 4) | (q3 << 6);
 }
 
 bool CQuest::CheckQuestRequisite(LPOBJ lpObj,QUEST_INFO* lpInfo) // OK
@@ -388,8 +400,11 @@ void CQuest::GCQuestInfoSend(int aIndex) // OK
 	for (int i=0; i<50; i++)
 	{
 		const auto questNumber = i*4;
-		pMsg.QuestInfo[i] = lpObj->Quest[questNumber].questState | lpObj->Quest[questNumber + 1].questState << 2
-					  | lpObj->Quest[questNumber + 2].questState << 4 | lpObj->Quest[questNumber + 3].questState << 6;
+		const BYTE q0 = GetClientQuestState(lpObj->Quest[questNumber].questState);
+		const BYTE q1 = GetClientQuestState(lpObj->Quest[questNumber + 1].questState);
+		const BYTE q2 = GetClientQuestState(lpObj->Quest[questNumber + 2].questState);
+		const BYTE q3 = GetClientQuestState(lpObj->Quest[questNumber + 3].questState);
+		pMsg.QuestInfo[i] = q0 | (q1 << 2) | (q2 << 4) | (q3 << 6);
 	}
 
 	LogAdd(eLogColor::LOG_DEBUG, "[QuestDebug][GCQuestInfoSend] aIndex=%d name=%s packet_size=%d count=%d first_bytes=%u,%u,%u,%u",
